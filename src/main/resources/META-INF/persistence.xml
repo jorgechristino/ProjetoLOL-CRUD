@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="projetoLOL" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Arma</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.ArmaSimples</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.ArmaTecnologica</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Batalha</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Dano</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Fisico</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Golpe</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.GolpeFisico</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.GolpeMagico</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Ionia</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Local</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Magico</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Noxus</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Piltover</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Regiao</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Ser</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Status</class>
+		<class>br.edu.unifei.ecot13a.projetoLOL.Zaun</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/projetolol?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="projetolol"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="projetolol"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+        </properties>
+    </persistence-unit>
+</persistence>
